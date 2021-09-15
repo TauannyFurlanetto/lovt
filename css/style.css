@@ -10,7 +10,7 @@ body{
 
 .container{
   width: 55rem;
-  max-width: 70rem;
+  max-width: 100%;
   margin: 0 auto;
 }
 header{
@@ -191,4 +191,34 @@ footer .container{
 footer .container .mapa{
   height: 300px;
   border-radius: 10px;
+}
+@media (max-width: 876px){
+  footer .container{
+    flex-wrap: wrap;
+    padding: 0 50px;
+    justify-content: center;
+  }
+  footer .container .mapa iframe{
+    width: 100%;
+  }
+  footer .container .info{
+    text-align: center;
+  }
+  footer .container .info .socialMedia ul{
+    justify-content: center;
+  }
+  section.lofts article{
+    margin: 20px;
+  } 
+  .container{
+    padding: 0 15px;
+  }
+}
+@media (max-width: 455px){
+  section.lofts .container{
+    flex-wrap: wrap;
+  }
+  section.lofts article{
+    width: 100%;
+  }
 }
